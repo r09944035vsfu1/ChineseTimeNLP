@@ -10,6 +10,20 @@
 [![Downloads](https://pepy.tech/badge/chinesetimenlp)](https://pepy.tech/project/chinesetimenlp)
 [![Downloads](https://pepy.tech/badge/chinesetimenlp/week)](https://pepy.tech/project/chinesetimenlp)
 
+# 使用方法
+## Intialized
+tn = TimeNormalizer(isPreferFuture=False)
+
+## test case
+(上/下/这/ /)(星期/礼拜/这周)(天/日/末/三)晚上8点  
+(上/下/这/ /)(星期/礼拜/这周)(天/日/末/三)晚上8点  
+(今/昨/前/明/后)天(早上10点/早上/中午/晚上)  
+12月13(日/号)(早上/下午/晚上)(<>点)  
+
+## source code
+如果要修改，我有fork一個repo
+https://github.com/r09944035vsfu1/ChineseTimeNLP
+
 ## 简介
 
 这是 Time-NLP 的 Python3 版本。  
