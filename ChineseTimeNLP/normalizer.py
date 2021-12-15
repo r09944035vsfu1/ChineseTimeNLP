@@ -75,7 +75,7 @@ class TimeNormalizer:
             endline = m.end()
             rpointer += 1
         logger.debug("=======")
-        print("temp list:", temp) # this is debug
+        
         try:
             res: List[TimeUnit] = []
             # 时间上下文： 前一个识别出来的时间会是下一个时间的上下文，用于处理：周六3点到5点这样的多个时间的识别，第二个5点应识别到是周六的。

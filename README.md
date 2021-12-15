@@ -12,7 +12,20 @@
 
 # 使用方法
 ## Intialized
+```
+import sys
+from loguru import logger
+from ChineseTimeNLP import TimeNormalizer, logger_format  # 引入包
+
+"""
+# 這兩行是用來初始化logger的，如果沒有初始化就無法開啟logger
+logger.remove() 
+default_logger = logger.add(sys.stdout, format=logger_format, level="DEBUG")
+"""
+
 tn = TimeNormalizer(isPreferFuture=False)
+
+```
 
 ## test case
 (上/下/这/ /)(星期/礼拜/这周)(天/日/末/三)晚上8点  
